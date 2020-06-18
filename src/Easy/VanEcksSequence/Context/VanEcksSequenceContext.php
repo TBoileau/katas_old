@@ -1,14 +1,15 @@
 <?php
 
-namespace TBoileau\CodinGame\Easy\VanEcksSequence;
+namespace TBoileau\CodinGame\Easy\VanEcksSequence\Context;
 
 use Assert\Assertion;
 use Behat\Behat\Context\Context;
+use TBoileau\CodinGame\Easy\VanEcksSequence\Entity\Sequence;
 use TBoileau\CodinGame\Easy\VanEcksSequence\UseCase\FindNumberInSequence;
 
 /**
  * Class VanEcksSequenceContext
- * @package TBoileau\CodinGame\Easy\VanEcksSequence
+ * @package TBoileau\CodinGame\Easy\VanEcksSequence\Context
  */
 class VanEcksSequenceContext implements Context
 {
@@ -60,6 +61,12 @@ class VanEcksSequenceContext implements Context
      */
     public function iMustFind(int $number): void
     {
-        Assertion::eq($number, $this->findNumberInSequence->execute($this->start, $this->position));
+        Assertion::eq(
+            $number,
+            $this->findNumberInSequence->execute(
+                new Sequence($this->start),
+                $this->position
+            )
+        );
     }
 }
