@@ -4,6 +4,8 @@ default:
       contexts:
         - 'TBoileau\CodinGame\Easy\BankRobbers\Context\HeistContext'
         - 'TBoileau\CodinGame\Easy\Onboarding\Context\SearchAndDestroyContext'
+        - 'TBoileau\CodinGame\Easy\VanEcksSequence\Context\VanEcksSequenceContext'
       paths:
         - '%paths.base%/src/Easy/BankRobbers'
         - '%paths.base%/src/Easy/Onboarding'
+        - '%paths.base%/src/Easy/VanEcksSequence'
