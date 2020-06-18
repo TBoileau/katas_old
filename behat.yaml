@@ -1,0 +1,7 @@
+default:
+  suites:
+    easy:
+      contexts:
+        - 'TBoileau\CodinGame\Easy\BankRobbers\Context\HeistContext'
+      paths:
+        - '%paths.base%/src/Easy/BankRobbers'
