@@ -1,0 +1,28 @@
+{
+    "name": "tboileau/codingame",
+    "description": "CodinGame exercises resolution in ATDD.",
+    "type": "project",
+    "require-dev": {
+        "behat/behat": "^3.7",
+        "beberlei/assert": "^3.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TBoileau",
+            "email": "t-boileau@email.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "TBoileau\\CodinGame\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TBoileau\\CodinGame\\Features\\": "features/bootstrap/"
+        }
+    }
+}
