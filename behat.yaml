@@ -3,5 +3,7 @@ default:
     easy:
       contexts:
         - 'TBoileau\CodinGame\Easy\BankRobbers\Context\HeistContext'
+        - 'TBoileau\CodinGame\Easy\Onboarding\Context\SearchAndDestroyContext'
       paths:
         - '%paths.base%/src/Easy/BankRobbers'
+        - '%paths.base%/src/Easy/Onboarding'
