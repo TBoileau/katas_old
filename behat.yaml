@@ -7,9 +7,11 @@ default:
         - 'TBoileau\CodinGame\Easy\VanEcksSequence\Context\VanEcksSequenceContext'
         - 'TBoileau\CodinGame\Easy\SudokuValidator\Context\SudokuValidatorContext'
         - 'TBoileau\CodinGame\Easy\GhostLegs\Context\GhostLegsContext'
+        - 'TBoileau\CodinGame\Easy\RectanglePartition\Context\RectanglePartitionContext'
       paths:
         - '%paths.base%/src/Easy/BankRobbers'
         - '%paths.base%/src/Easy/Onboarding'
         - '%paths.base%/src/Easy/VanEcksSequence'
         - '%paths.base%/src/Easy/SudokuValidator'
         - '%paths.base%/src/Easy/GhostLegs'
+        - '%paths.base%/src/Easy/RectanglePartition'
