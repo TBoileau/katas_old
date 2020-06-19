@@ -62,7 +62,7 @@ class EnigmaContext implements Context
      */
     public function startingShift(int $startingShift): void
     {
-        $this->message->addEncryptionMachines(new Caesar($startingShift));
+        $this->message->addEncryptionMachine(new Caesar($startingShift));
     }
 
     /**
@@ -71,7 +71,7 @@ class EnigmaContext implements Context
      */
     public function addRotor(string $rotor): void
     {
-        $this->message->addEncryptionMachines(new Rotor($rotor));
+        $this->message->addEncryptionMachine(new Rotor($rotor));
     }
 
     /**
