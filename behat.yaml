@@ -8,6 +8,7 @@ default:
         - 'TBoileau\CodinGame\Easy\SudokuValidator\Context\SudokuValidatorContext'
         - 'TBoileau\CodinGame\Easy\GhostLegs\Context\GhostLegsContext'
         - 'TBoileau\CodinGame\Easy\RectanglePartition\Context\RectanglePartitionContext'
+        - 'TBoileau\CodinGame\Easy\Enigma\Context\EnigmaContext'
       paths:
         - '%paths.base%/src/Easy/BankRobbers'
         - '%paths.base%/src/Easy/Onboarding'
@@ -15,3 +16,4 @@ default:
         - '%paths.base%/src/Easy/SudokuValidator'
         - '%paths.base%/src/Easy/GhostLegs'
         - '%paths.base%/src/Easy/RectanglePartition'
+        - '%paths.base%/src/Easy/Enigma'
