@@ -6,8 +6,10 @@ default:
         - 'TBoileau\CodinGame\Easy\Onboarding\Context\SearchAndDestroyContext'
         - 'TBoileau\CodinGame\Easy\VanEcksSequence\Context\VanEcksSequenceContext'
         - 'TBoileau\CodinGame\Easy\SudokuValidator\Context\SudokuValidatorContext'
+        - 'TBoileau\CodinGame\Easy\GhostLegs\Context\GhostLegsContext'
       paths:
         - '%paths.base%/src/Easy/BankRobbers'
         - '%paths.base%/src/Easy/Onboarding'
         - '%paths.base%/src/Easy/VanEcksSequence'
         - '%paths.base%/src/Easy/SudokuValidator'
+        - '%paths.base%/src/Easy/GhostLegs'
