@@ -1,6 +1,6 @@
 Feature: GhostLegs - Easy
   Scenario: Simple Sample
-    Given a player want to play to ghost legs that is 7 wide and 7 high
+    Given a player want to play to ghost legs
     Then he chooses a line in:
     """
     A  B  C
@@ -19,7 +19,7 @@ Feature: GhostLegs - Easy
     """
 
   Scenario: Small Sample
-    Given a player want to play to ghost legs that is 13 wide and 8 high
+    Given a player want to play to ghost legs
     Then he chooses a line in:
     """
     A  B  C  D  E
@@ -41,7 +41,7 @@ Feature: GhostLegs - Easy
     """
 
   Scenario: 6 Lanes
-    Given a player want to play to ghost legs that is 16 wide and 14 high
+    Given a player want to play to ghost legs
     Then he chooses a line in:
     """
     F  E  D  C  B  A
@@ -70,7 +70,7 @@ Feature: GhostLegs - Easy
     """
 
   Scenario: 8 Lanes
-    Given a player want to play to ghost legs that is 22 wide and 18 high
+    Given a player want to play to ghost legs
     Then he chooses a line in:
     """
     P  Q  R  S  T  U  V  W
@@ -105,7 +105,7 @@ Feature: GhostLegs - Easy
     """
 
   Scenario: 10 Lanes
-    Given a player want to play to ghost legs that is 28 wide and 20 high
+    Given a player want to play to ghost legs
     Then he chooses a line in:
     """
     A  B  C  D  E  F  G  H  I  J
@@ -144,7 +144,7 @@ Feature: GhostLegs - Easy
     """
 
   Scenario: Wide and Wild
-    Given a player want to play to ghost legs that is 76 wide and 23 high
+    Given a player want to play to ghost legs
     Then he chooses a line in:
     """
     ~  !  @  #  $  %  ^  &  *  (  )  +  `  1  2  3  4  5  6  7  8  9  0  =  \  /
@@ -202,7 +202,7 @@ Feature: GhostLegs - Easy
     """
 
   Scenario: Simple Sample
-    Given a player want to play to ghost legs that is 7 wide and 7 high
+    Given a player want to play to ghost legs
     Then he chooses a line in:
     """
     A  B  C

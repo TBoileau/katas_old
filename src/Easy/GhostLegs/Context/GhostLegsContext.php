@@ -5,6 +5,7 @@ namespace TBoileau\CodinGame\Easy\GhostLegs\Context;
 use Assert\Assertion;
 use Behat\Behat\Context\Context;
 use Behat\Gherkin\Node\PyStringNode;
+use TBoileau\CodinGame\Easy\GhostLegs\Entity\Diagram;
 use TBoileau\CodinGame\Easy\GhostLegs\UseCase\FindConnectedPairs;
 
 /**
@@ -19,17 +20,7 @@ class GhostLegsContext implements Context
     private $findConnectedPairs;
 
     /**
-     * @var int
-     */
-    private $width;
-
-    /**
-     * @var int
-     */
-    private $height;
-
-    /**
-     * @var array
+     * @var Diagram
      */
     private $diagram;
 
@@ -42,14 +33,10 @@ class GhostLegsContext implements Context
     }
 
     /**
-     * @Given a player want to play to ghost legs that is :width wide and :height high
-     * @param int $width
-     * @param int $height
+     * @Given a player want to play to ghost legs
      */
-    public function playerWantToPlay(int $width, int $height): void
+    public function playerWantToPlay(): void
     {
-        $this->width = $width;
-        $this->height = $height;
     }
 
     /**
@@ -58,7 +45,7 @@ class GhostLegsContext implements Context
      */
     public function playerChooseALineIn(PyStringNode $diagram): void
     {
-        $this->diagram = $diagram;
+        $this->diagram = Diagram::createFromArray($diagram->getStrings());
     }
 
     /**
@@ -70,7 +57,7 @@ class GhostLegsContext implements Context
     {
         Assertion::eq(
             $connectedPairs->getStrings(),
-            $this->findConnectedPairs->execute()
+            $this->findConnectedPairs->execute($this->diagram)
         );
     }
 }
