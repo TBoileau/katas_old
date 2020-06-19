@@ -4,6 +4,9 @@ namespace TBoileau\CodinGame\Easy\Enigma\Context;
 
 use Assert\Assertion;
 use Behat\Behat\Context\Context;
+use TBoileau\CodinGame\Easy\Enigma\Entity\Caesar;
+use TBoileau\CodinGame\Easy\Enigma\Entity\Message;
+use TBoileau\CodinGame\Easy\Enigma\Entity\Rotor;
 use TBoileau\CodinGame\Easy\Enigma\UseCase\Decode;
 use TBoileau\CodinGame\Easy\Enigma\UseCase\Encode;
 
@@ -23,6 +26,19 @@ class EnigmaContext implements Context
      */
     private $decode;
 
+    /**
+     * @var string
+     */
+    private $mode;
+
+    /**
+     * @var Message
+     */
+    private $message;
+
+    /**
+     * EnigmaContext constructor.
+     */
     public function __construct()
     {
         $this->encode = new Encode();
@@ -36,7 +52,8 @@ class EnigmaContext implements Context
      */
     public function weNeedTo(string $mode, string $message): void
     {
-
+        $this->mode = $mode;
+        $this->message = new Message($message);
     }
 
     /**
@@ -45,7 +62,7 @@ class EnigmaContext implements Context
      */
     public function startingShift(int $startingShift): void
     {
-
+        $this->message->addEncryptionMachines(new Caesar($startingShift));
     }
 
     /**
@@ -54,7 +71,7 @@ class EnigmaContext implements Context
      */
     public function addRotor(string $rotor): void
     {
-
+        $this->message->addEncryptionMachines(new Rotor($rotor));
     }
 
     /**
@@ -63,9 +80,16 @@ class EnigmaContext implements Context
      */
     public function sentFinalOutput(string $output): void
     {
-        Assertion::eq(
-            $output,
-            $this->encode->execute()
-        );
+        if ($this->mode === "DECODE") {
+            Assertion::eq(
+                $output,
+                $this->decode->execute($this->message)
+            );
+        } else {
+            Assertion::eq(
+                $output,
+                $this->encode->execute($this->message)
+            );
+        }
     }
 }
