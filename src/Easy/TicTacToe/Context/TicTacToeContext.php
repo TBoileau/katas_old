@@ -56,4 +56,12 @@ class TicTacToeContext implements Context
             array_values($table->getTable())
         );
     }
+
+    /**
+     * @Then /^the final tic tac toe board is false$/
+     */
+    public function theFinalTicTacToeBoardIsFalse()
+    {
+        Assertion::null($this->findWinningMove->execute($this->board));
+    }
 }

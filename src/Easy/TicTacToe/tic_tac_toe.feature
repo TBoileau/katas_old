@@ -39,13 +39,10 @@ Feature: Tic Tac Toe - Easy
       | O | X | X |
       | X | O | . |
       | O | . | O |
-  Scenario: Real condition
+  Scenario: No win condition
     Given find the winning move of O player
     When the following tic tac toe board is :
       | . | . | . |
       | . | . | . |
       | . | . | . |
-    Then the final tic tac toe board is :
-      | . | . | . |
-      | . | . | . |
-      | . | . | . |
+    Then the final tic tac toe board is false
