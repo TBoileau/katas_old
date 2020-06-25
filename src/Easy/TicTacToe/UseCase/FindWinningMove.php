@@ -13,9 +13,9 @@ class FindWinningMove
 {
     /**
      * @param Board $board
-     * @return array
+     * @return array|null
      */
-    public function execute(Board $board): array
+    public function execute(Board $board): ?array
     {
         foreach ($board->getWinningCombinations() as $cells) {
             $signs = array_map(function (Cell $cell) {
@@ -32,10 +32,10 @@ class FindWinningMove
 
                 $cell->setSign("O");
 
-                break;
+                return $board->toArray();
             }
         }
 
-        return $board->toArray();
+        return null;
     }
 }
