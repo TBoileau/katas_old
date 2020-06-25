@@ -62,7 +62,6 @@ class SudokuValidatorContext implements Context
      */
     public function hisSudokuGridIs(string $status): void
     {
-        var_export($status === "good");
         Assertion::eq(
             $status === "good",
             $this->validateSudoku->execute($this->sudokuGrid)
