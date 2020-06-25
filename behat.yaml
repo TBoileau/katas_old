@@ -9,6 +9,7 @@ default:
         - 'TBoileau\CodinGame\Easy\GhostLegs\Context\GhostLegsContext'
         - 'TBoileau\CodinGame\Easy\RectanglePartition\Context\RectanglePartitionContext'
         - 'TBoileau\CodinGame\Easy\Enigma\Context\EnigmaContext'
+        - 'TBoileau\CodinGame\Easy\TicTacToe\Context\TicTacToeContext'
       paths:
         - '%paths.base%/src/Easy/BankRobbers'
         - '%paths.base%/src/Easy/Onboarding'
@@ -17,3 +18,4 @@ default:
         - '%paths.base%/src/Easy/GhostLegs'
         - '%paths.base%/src/Easy/RectanglePartition'
         - '%paths.base%/src/Easy/Enigma'
+        - '%paths.base%/src/Easy/TicTacToe'
