@@ -10,6 +10,7 @@ default:
         - 'TBoileau\CodinGame\Easy\RectanglePartition\Context\RectanglePartitionContext'
         - 'TBoileau\CodinGame\Easy\Enigma\Context\EnigmaContext'
         - 'TBoileau\CodinGame\Easy\TicTacToe\Context\TicTacToeContext'
+        - 'TBoileau\CodinGame\Easy\NatureOfQuadrilaterals\Context\NatureOfQuadrilateralsContext'
       paths:
         - '%paths.base%/src/Easy/BankRobbers'
         - '%paths.base%/src/Easy/Onboarding'
@@ -19,3 +20,4 @@ default:
         - '%paths.base%/src/Easy/RectanglePartition'
         - '%paths.base%/src/Easy/Enigma'
         - '%paths.base%/src/Easy/TicTacToe'
+        - '%paths.base%/src/Easy/NatureOfQuadrilaterals'
