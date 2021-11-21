@@ -21,3 +21,8 @@ default:
         - '%paths.base%/src/Easy/Enigma'
         - '%paths.base%/src/Easy/TicTacToe'
         - '%paths.base%/src/Easy/NatureOfQuadrilaterals'
+    medium:
+      contexts:
+        - 'TBoileau\CodinGame\Medium\StockExchangeLosses\Context\StockExchangeLossesContext'
+      paths:
+        - '%paths.base%/src/Medium/StockExchangeLosses'

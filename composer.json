@@ -3,8 +3,8 @@
     "description": "CodinGame exercises resolution in ATDD.",
     "type": "project",
     "require-dev": {
-        "behat/behat": "^3.7",
-        "beberlei/assert": "^3.2"
+        "behat/behat": "^3.10",
+        "beberlei/assert": "^3.3"
     },
     "license": "MIT",
     "authors": [
