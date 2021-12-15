@@ -24,5 +24,7 @@ default:
     medium:
       contexts:
         - 'TBoileau\CodinGame\Medium\StockExchangeLosses\Context\StockExchangeLossesContext'
+        - 'TBoileau\CodinGame\Medium\WinamaxBattle\Context\WinamaxBattleContext'
       paths:
         - '%paths.base%/src/Medium/StockExchangeLosses'
+        - '%paths.base%/src/Medium/WinamaxBattle'
