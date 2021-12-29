@@ -13,6 +13,7 @@ CodinGame exercises resolution in ATDD.
 * [SudokuValidator](src/Easy/SudokuValidator/sudoku_validator.feature)
 * [Tic Tac Toe](src/Easy/TicTacToe/tic_tac_toe.feature)
 * [VanEcksSequence](src/Easy/VanEcksSequence/van_ecks_sequence.feature)
+* [Equivalent Resistance Circuit Building](src/Medium/EquivalentResistanceCircuitBuilding/equivalent_resistance_circuit_building.feature)
 
 # Medium
 * [StockExchangeLosses](src/Medium/StockExchangeLosses/stock_exchange_losses.feature)

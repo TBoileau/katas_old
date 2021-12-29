@@ -11,6 +11,7 @@ default:
         - 'TBoileau\CodinGame\Easy\Enigma\Context\EnigmaContext'
         - 'TBoileau\CodinGame\Easy\TicTacToe\Context\TicTacToeContext'
         - 'TBoileau\CodinGame\Easy\NatureOfQuadrilaterals\Context\NatureOfQuadrilateralsContext'
+        - 'TBoileau\CodinGame\Easy\EquivalentResistanceCircuitBuilding\Context\EquivalentResistanceCircuitBuildingContext'
       paths:
         - '%paths.base%/src/Easy/BankRobbers'
         - '%paths.base%/src/Easy/Onboarding'
@@ -21,6 +22,7 @@ default:
         - '%paths.base%/src/Easy/Enigma'
         - '%paths.base%/src/Easy/TicTacToe'
         - '%paths.base%/src/Easy/NatureOfQuadrilaterals'
+        - '%paths.base%/src/Easy/EquivalentResistanceCircuitBuilding'
     medium:
       contexts:
         - 'TBoileau\CodinGame\Medium\StockExchangeLosses\Context\StockExchangeLossesContext'
