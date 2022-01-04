@@ -15,7 +15,8 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "symfony/var-dumper": "^2.1"
+        "symfony/var-dumper": "^2.1",
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {

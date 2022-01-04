@@ -12,6 +12,7 @@ default:
         - 'TBoileau\CodinGame\Easy\TicTacToe\Context\TicTacToeContext'
         - 'TBoileau\CodinGame\Easy\NatureOfQuadrilaterals\Context\NatureOfQuadrilateralsContext'
         - 'TBoileau\CodinGame\Easy\EquivalentResistanceCircuitBuilding\Context\EquivalentResistanceCircuitBuildingContext'
+        - 'TBoileau\CodinGame\Easy\Asteroids\Context\AsteroidsContext'
       paths:
         - '%paths.base%/src/Easy/BankRobbers'
         - '%paths.base%/src/Easy/Onboarding'
@@ -23,6 +24,7 @@ default:
         - '%paths.base%/src/Easy/TicTacToe'
         - '%paths.base%/src/Easy/NatureOfQuadrilaterals'
         - '%paths.base%/src/Easy/EquivalentResistanceCircuitBuilding'
+        - '%paths.base%/src/Easy/Asteroids'
     medium:
       contexts:
         - 'TBoileau\CodinGame\Medium\StockExchangeLosses\Context\StockExchangeLossesContext'
