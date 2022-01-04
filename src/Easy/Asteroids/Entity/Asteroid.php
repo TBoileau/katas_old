@@ -29,34 +29,24 @@ final class Asteroid
         $this->points[] = $point;
     }
 
-    public function determineFinalPositionAt(Time $at): void
+    public function determineFinalPositionAt(Time $finalTime): void
     {
         $firstPoint = $this->points[0];
         $secondPoint = $this->points[1];
 
-        $nextX = $secondPoint->position->x;
-        $nextY = $secondPoint->position->y;
+        $ratio = ($finalTime->time - $secondPoint->time->time) / ($secondPoint->time->time - $firstPoint->time->time);
 
-        $firstTimeDiff = $secondPoint->time->time - $firstPoint->time->time;
-        $lastTimeDiff = $at->time - $secondPoint->time->time;
+        $getNext = static fn (int $first, int $second) => intval(floor($second + ($second - $first) * $ratio));
 
-        $getNext = static function (int $first, int $second) use ($firstTimeDiff, $lastTimeDiff) {
-            $diff = $second - $first;
-            $diff = $diff / $firstTimeDiff;
-            $diff = $diff * $lastTimeDiff;
-
-            return intval(floor($second + $diff));
-        };
-
-        if ($firstPoint->position->y !== $secondPoint->position->y) {
-            $nextY = $getNext($firstPoint->position->y, $secondPoint->position->y);
-        }
-
-        if ($firstPoint->position->x !== $secondPoint->position->x) {
-            $nextX = $getNext($firstPoint->position->x, $secondPoint->position->x);
-        }
-
-        $this->addPoint(Point::create($at, Position::create($nextY, $nextX)));
+        $this->addPoint(
+            Point::create(
+                $finalTime,
+                Position::create(
+                    $getNext($firstPoint->position->y, $secondPoint->position->y),
+                    $getNext($firstPoint->position->x, $secondPoint->position->x)
+                )
+            )
+        );
     }
 
     public function getFinalPoint(): Point
