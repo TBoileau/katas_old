@@ -15,6 +15,7 @@ CodinGame exercises resolution in ATDD.
 * [VanEcksSequence](src/Easy/VanEcksSequence/van_ecks_sequence.feature)
 * [Equivalent Resistance Circuit Building](src/Easy/EquivalentResistanceCircuitBuilding/equivalent_resistance_circuit_building.feature)
 * [Asteroids](src/Easy/Asteroids/asteroids.feature)
+* [Dungeons and maps](src/Easy/DungeonsAndMaps/dungeons_and_maps.feature)
 
 # Medium
 * [StockExchangeLosses](src/Medium/StockExchangeLosses/stock_exchange_losses.feature)

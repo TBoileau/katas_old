@@ -13,6 +13,7 @@ default:
         - 'TBoileau\CodinGame\Easy\NatureOfQuadrilaterals\Context\NatureOfQuadrilateralsContext'
         - 'TBoileau\CodinGame\Easy\EquivalentResistanceCircuitBuilding\Context\EquivalentResistanceCircuitBuildingContext'
         - 'TBoileau\CodinGame\Easy\Asteroids\Context\AsteroidsContext'
+        - 'TBoileau\CodinGame\Easy\DungeonsAndMaps\Context\DungeonsAndMapsContext'
       paths:
         - '%paths.base%/src/Easy/BankRobbers'
         - '%paths.base%/src/Easy/Onboarding'
@@ -25,6 +26,7 @@ default:
         - '%paths.base%/src/Easy/NatureOfQuadrilaterals'
         - '%paths.base%/src/Easy/EquivalentResistanceCircuitBuilding'
         - '%paths.base%/src/Easy/Asteroids'
+        - '%paths.base%/src/Easy/DungeonsAndMaps'
     medium:
       contexts:
         - 'TBoileau\CodinGame\Medium\StockExchangeLosses\Context\StockExchangeLossesContext'

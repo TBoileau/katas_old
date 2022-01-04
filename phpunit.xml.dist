@@ -11,6 +11,7 @@
     <testsuites>
         <testsuite name="asteroids">
             <directory>src/Easy/Asteroids/Tests</directory>
+            <directory>src/Easy/DungeonsAndMaps/Tests</directory>
         </testsuite>
     </testsuites>
 </phpunit>
