@@ -1,9 +1,9 @@
-CodinGame
-=========
+# Katas
 
-CodinGame exercises resolution in ATDD.
+**Kata** est un concept sur ma chaîne [Twitch](https://twitch.tv/toham). L'idée est de s'exercer sur différents sujets, comme l'algorithmie, le refactoring, le TDD, etc...
 
-# Easy
+
+## Easy
 * [Bank Robbers](src/Easy/BankRobbers/bank_robbers.feature)
 * [Enigma](src/Easy/Enigma/enigma.feature)
 * [GhostLegs](src/Easy/GhostLegs/ghost_legs.feature)
@@ -17,6 +17,6 @@ CodinGame exercises resolution in ATDD.
 * [Asteroids](src/Easy/Asteroids/asteroids.feature)
 * [Dungeons and maps](src/Easy/DungeonsAndMaps/dungeons_and_maps.feature)
 
-# Medium
+## Medium
 * [StockExchangeLosses](src/Medium/StockExchangeLosses/stock_exchange_losses.feature)
 * [WinamaxBattle](src/Medium/WinamaxBattle/winamax_battle.feature)
